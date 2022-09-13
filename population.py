@@ -15,7 +15,6 @@ t1   = 24       #hours
 
 # Find constant C
 C = (B / N_t0) - 1
-print (C)
 
 #Population after t1 hours
 N_t1 = B / (1 + C*exp(-k*t1))

@@ -7,9 +7,9 @@
 # ------------------------------------------------------------------------------
 from math import exp
 
-n = 12
-dt = 48/(n+1)
-P = lambda t: 50000 / (1 + 9*exp(-0.2*t)) #Growth formula, taken from ex 2.3
+n  = 12
+dt = 48/(n+1)   #Interval length, hours
+P  = lambda t: 50000 / (1 + 9*exp(-0.2*t)) #Growth formula, taken from ex 2.3
 
 #Calculates t and N and stores result in two lists
 t = []
