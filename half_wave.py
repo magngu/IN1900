@@ -1,4 +1,4 @@
-# Created by    : Magnus Gullien
+# Created by    : magngul@math.uio.no
 # Created date  : 11. sep 2022
 # Course        : UiO IN1900
 # Excercise     : 4.5 half_wave.py
@@ -9,8 +9,7 @@
 from math import pi, sin
 
 def f(x):
-    """Half-wave rectifier for sin(x). sin(x)<=0 is set to 0. Returns float."""
-
+    """Half-wave rectifier for sin(x). Returns float."""
     if sin(x) > 0:
         return sin(x)
     else:
@@ -22,9 +21,10 @@ def test_f():
     x1, x2       = 0, pi/2
     exp1, exp2   = 0, 1         #Expected values
     calc1, calc2 = f(x1), f(x2) #Values returned by f(x)
-
+    tol = 1e-14 #Tolerance for comparison of floats
     msg = f'Expected {exp1} & {exp2}, but got {calc1} & {calc2}.'
-    success = exp1 == calc1 and exp2 == calc2
+
+    success = (exp1 - calc1) < tol and (exp2 - calc2) < tol
     assert success, msg
 
 

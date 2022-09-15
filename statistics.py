@@ -1,4 +1,4 @@
-# Created by    : Magnus Gullien
+# Created by    : magngul@math.uio.no
 # Created date  : 12. sep 2022
 # Course        : UiO IN1900
 # Excercise     : 4.8 statistics.py
@@ -32,9 +32,10 @@ def test_standard_deviation():
     x_test  = [0.699, 0.703, 0.698, 0.701]
     expect  = np.std(x_test)
     calc    = standard_deviation(x_test)
-    success = expect == calc
-
+    tol     = 1e-14 #tolerance for float comparison
+    success = (expect - calc) < tol
     msg = f'Expected {expect} but got {calc}.'
+
     assert success, msg
 
 
@@ -43,9 +44,10 @@ def test_mean():
     x_test  = [0.699, 0.703, 0.698, 0.701]
     expect  = np.mean(x_test)
     calc    = mean(x_test)
-    success = expect == calc
-
+    tol     = 1e-14 #tolerance for float comparison
+    success = (expect - calc) < tol
     msg = f'Expected {expect} but got {calc}.'
+
     assert success, msg
 
 
