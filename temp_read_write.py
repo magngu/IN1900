@@ -3,7 +3,7 @@
 # Course        : UiO IN1900
 # Excercise     : 5.10 temp_read_write.py
 # ------------------------------------------------------------------------------
-# Extracts temperatures from file, prints it in terminal and file
+# Extracts temperatures from file, prints it in terminal and writes to file
 # ------------------------------------------------------------------------------
 import numpy as np
 
@@ -11,8 +11,8 @@ def extract_data(filename):
     """
     Extracts temperatures for given month from the input file.
 
-    Args:
-        filename: string
+    Arguments:
+    filename -- String with name of file to be read
     """
     temps = []
     with open(filename, 'r') as file:
@@ -47,13 +47,12 @@ def footer():
 def write_formatting(filename, list1, list2):
     """
     Writes data from the two lists to a file. Will overwrite any file with
-    identical filename.s
+    identical filename.
 
-    Args:
-        filename:   string. Name of file to be written
-        list1:      list. List with temperatures
-        list2:      list. Lsit with temperatures
-
+    Arguments
+    filename -- String with filename of file to be written
+    list1    -- List with int or floats. Temperatures
+    list2    -- List with int or floats. Temperatures. Length equal to list1.
     """
     with open(filename, 'w') as file:
         file.write('|      List1     |       List2     |\n')
