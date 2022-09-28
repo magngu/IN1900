@@ -1,4 +1,4 @@
-# Created by    : magngul@math.uio.no
+# Created by    : magngul@math.uio.no 
 # Created date  : 20. sep 2022
 # Course        : UiO IN1900
 # Excercise     : 5.1 quadratic_roots_input.py

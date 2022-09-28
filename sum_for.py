@@ -1,4 +1,4 @@
-# Created by    : Magnus Gullien
+# Created by    : magngul@math.uio.no
 # Created date  : 31. aug 2022
 # Course        : UiO IN1900
 # Excercise     : 3.4 sum_for.py

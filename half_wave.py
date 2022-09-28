@@ -1,4 +1,4 @@
-# Created by    : magngul@math.uio.no
+# Created by    : magngul@math.uio.no 
 # Created date  : 11. sep 2022
 # Course        : UiO IN1900
 # Excercise     : 4.5 half_wave.py
